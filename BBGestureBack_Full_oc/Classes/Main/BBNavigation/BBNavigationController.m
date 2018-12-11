@@ -161,6 +161,7 @@
         appdelegate.gestureBaseView.imgView.image = image;
     return [super popToRootViewControllerAnimated:animated];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

@@ -154,4 +154,5 @@ static char bbListenTabbarViewMove[] = "bbListenTabbarViewMove";
 - (void)layoutSubviews{
     [super layoutSubviews];
 }
+
 @end

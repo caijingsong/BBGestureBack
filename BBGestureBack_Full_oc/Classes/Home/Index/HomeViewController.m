@@ -23,14 +23,13 @@
     [sysBtn addTarget:self action:@selector(sysPushClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:sysBtn];
     
-
-    
 }
 
 
 -(void)sysPushClick{
     [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

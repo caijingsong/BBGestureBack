@@ -23,12 +23,14 @@
     [super viewDidLoad];
     [self setUpAllChildViewController];
 }
+
 - (void)setUpAllChildViewController {
     HomeViewController *home = [[HomeViewController alloc] init];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"TabBarHomeNormal"] selectedImage:[UIImage imageNamed:@"TabBarHomeSelected"] title:@"Home"];
     UserViewController *user = [[UserViewController alloc] init];
     [self setUpOneChildViewController:user image:[UIImage imageNamed:@"TabBarUserNormal"] selectedImage:[UIImage imageNamed:@"TabBarUserSelected"] title:@"User"];
 }
+
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
     vc.title = title;
     vc.tabBarItem.image = image;
@@ -36,6 +38,7 @@
     BBNavigationController *nav = [[BBNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

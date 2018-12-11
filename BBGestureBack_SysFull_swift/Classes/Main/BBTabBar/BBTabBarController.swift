@@ -12,6 +12,7 @@ class BBTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpAllChildViewController()
     }
     
@@ -29,9 +30,5 @@ class BBTabBarController: UITabBarController {
         addChildViewController(navVC)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
 
 }

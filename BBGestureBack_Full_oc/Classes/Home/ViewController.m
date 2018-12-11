@@ -48,9 +48,7 @@
     sysPopBtn.backgroundColor = [UIColor blueColor];
     [sysPopBtn setTitle:@"sysPop" forState:UIControlStateNormal];
     [sysPopBtn addTarget:self action:@selector(sysPopClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:sysPopBtn];
-    
-    
+    [self.view addSubview:sysPopBtn];    
 }
 
 
