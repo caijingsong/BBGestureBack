@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2E73E121C0B3B800C55FBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E73E021C0B3B800C55FBA /* BaseViewController.swift */; };
 		CEC3BBC8206354CE0003CF06 /* BBGestureBackConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3BBC7206354CE0003CF06 /* BBGestureBackConst.m */; };
 		CEDECB9C205CC3CD00C08340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDECB9B205CC3CD00C08340 /* Assets.xcassets */; };
 		CEDECB9F205CC3CD00C08340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDECB9D205CC3CD00C08340 /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A2E73E021C0B3B800C55FBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CEC3BBC6206354AC0003CF06 /* BBGestureBackConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGestureBackConst.h; sourceTree = "<group>"; };
 		CEC3BBC7206354CE0003CF06 /* BBGestureBackConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGestureBackConst.m; sourceTree = "<group>"; };
 		CEDECB8F205CC3CD00C08340 /* BBGestureBack_Full_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBGestureBack_Full_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +282,7 @@
 				CF395E1E20BD4BD300434CC7 /* Home */,
 				CF395E2120BD4BD300434CC7 /* User */,
 				CF395E2320BD4BD300434CC7 /* Main */,
+				9A2E73E021C0B3B800C55FBA /* BaseViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -705,6 +708,7 @@
 				CF395E2820BD4BD300434CC7 /* AppDelegate.swift in Sources */,
 				CF395E2720BD4BD300434CC7 /* ViewController.swift in Sources */,
 				CF395E2A20BD4C5800434CC7 /* BBTabBarController.swift in Sources */,
+				9A2E73E121C0B3B800C55FBA /* BaseViewController.swift in Sources */,
 				CF395E2C20BD4DC400434CC7 /* BBNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -920,7 +924,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQ34R42YD9;
 				INFOPLIST_FILE = BBGestureBack_SysFull_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bonway.BBGestureBack-SysFull-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -941,7 +945,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQ34R42YD9;
 				INFOPLIST_FILE = BBGestureBack_SysFull_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bonway.BBGestureBack-SysFull-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,18 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = UIColor.white
+        
+        let sysBtn = UIButton()
+        self.view.addSubview(sysBtn)
+        sysBtn.backgroundColor = UIColor.blue
+        sysBtn.frame = CGRect(x: 100, y: 100, width: 110, height: 100)
+        sysBtn.setTitle("sysPush", for: UIControlState.normal)
+        sysBtn.addTarget(self, action: #selector(sysPushClick), for: UIControlEvents.touchUpInside)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func sysPushClick() {
+        
+        let vc = ViewController()
+        vc.hidesBottomBarWhenPushed = true
+        vc.view.backgroundColor = UIColor.red
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-
-
 }
 

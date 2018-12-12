@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         //---------------------------------------
         
         view.backgroundColor = UIColor.white
+        
         let sysBtn = UIButton()
         sysBtn.backgroundColor = UIColor.blue
         sysBtn.frame = CGRect(x: 100, y: 100, width: 110, height: 100)
@@ -28,16 +29,27 @@ class HomeViewController: UIViewController {
         self.view.addSubview(sysBtn)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var animatedd = animated
+        if let count = self.navigationController?.childViewControllers.count {
+            animatedd = count > 1
+        }
+        self.navigationController?.setNavigationBarHidden(true, animated: animatedd)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     @objc func sysPushClick() {
-        self.navigationController?.pushViewController(ViewController(), animated: true)
+        
+        let vc = ViewController()
+        vc.hidesBottomBarWhenPushed = true 
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }

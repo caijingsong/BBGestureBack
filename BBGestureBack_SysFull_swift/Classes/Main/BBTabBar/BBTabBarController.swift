@@ -17,11 +17,12 @@ class BBTabBarController: UITabBarController {
     }
     
     func setUpAllChildViewController() {
-        setUpOneChildViewController(vc: HomeViewController(), image: UIImage(named:  "TabBarHomeNormal")!, selectedImage: UIImage(named: "TabBarHomeSelected")!, title: "Home")
-        setUpOneChildViewController(vc: UserViewController(), image: UIImage(named:  "TabBarUserNormal")!, selectedImage: UIImage(named: "TabBarUserSelected")!, title: "User")
+        
+        setUpOneChildVC(vc: HomeViewController(), image: UIImage(named:  "TabBarHomeNormal")!, selectedImage: UIImage(named: "TabBarHomeSelected")!, title: "Home")
+        setUpOneChildVC(vc: UserViewController(), image: UIImage(named:  "TabBarUserNormal")!, selectedImage: UIImage(named: "TabBarUserSelected")!, title: "User")
     }
     
-    func setUpOneChildViewController(vc:UIViewController,image:UIImage,selectedImage:UIImage,title:String) {
+    func setUpOneChildVC(vc:UIViewController,image:UIImage,selectedImage:UIImage,title:String) {
         
         vc.title = title
         vc.tabBarItem.image = image

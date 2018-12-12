@@ -17,6 +17,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
     UIButton *sysBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     sysBtn.backgroundColor = [UIColor blueColor];
     [sysBtn setTitle:@"sysPush" forState:UIControlStateNormal];
@@ -28,13 +29,6 @@
 - (void)sysPushClick {
     [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 
 @end

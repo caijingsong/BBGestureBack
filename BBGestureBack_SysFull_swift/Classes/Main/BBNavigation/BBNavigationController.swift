@@ -8,36 +8,8 @@
 
 import UIKit
 
-class BBNavigationController: UINavigationController, UIGestureRecognizerDelegate{
+class BBNavigationController: UINavigationController{
 
-//    var blackList : NSMutableArray!
-    
-//    private lazy var blackList:NSMutableArray = {
-//        let list = NSMutableArray.init(array: nil)
-//        return list
-//    }()
-//
-//
-//
-//    func addFullScreenPopBlackListItem(viewController: UIViewController){
-//        if viewController as? UIViewController == nil {
-//            return
-//        }
-//        blackList.add(viewController)
-//    }
-//
-//    func removeFromFullScreenPopBlackList(viewController: UIViewController){
-//
-//        for vc in blackList {
-//            if vc == nil {
-//                blackList.remove(viewController)
-//            }
-//        }
-//
-//
-//
-//    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +17,5 @@ class BBNavigationController: UINavigationController, UIGestureRecognizerDelegat
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 }

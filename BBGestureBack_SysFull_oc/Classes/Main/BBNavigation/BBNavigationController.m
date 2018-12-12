@@ -48,9 +48,8 @@
     SEL handler = NSSelectorFromString(@"handleNavigationTransition:");
 
     UIView *targetView = self.interactivePopGestureRecognizer.view;
-    
 
-    UIPanGestureRecognizer * fullScreenGes = [[UIPanGestureRecognizer alloc]initWithTarget:target action:handler];
+    UIPanGestureRecognizer *fullScreenGes = [[UIPanGestureRecognizer alloc]initWithTarget:target action:handler];
     fullScreenGes.delegate = self;
     [targetView addGestureRecognizer:fullScreenGes];
 
@@ -79,11 +78,6 @@
     
     return self.childViewControllers.count == 1 ? NO : YES;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+ 
 
 @end

@@ -9,7 +9,7 @@
 
 @interface BBNavigationController : UINavigationController
 
-- (void)addFullScreenPopBlackListItem:(UIViewController *)viewController;
-- (void)removeFromFullScreenPopBlackList:(UIViewController *)viewController;
+//- (void)addFullScreenPopBlackListItem:(UIViewController *)viewController;
+//- (void)removeFromFullScreenPopBlackList:(UIViewController *)viewController;
 
 @end
